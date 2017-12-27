@@ -5,63 +5,41 @@ body {
   font-family: sans-serif;
   background-color: #262626;  
 }
-ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-ul li {
-  position: relative;
-  list-style: none;
-}
-ul li a {
-  position: relative;
-  width: 100px;
-  height: 40px;
-  display: block;
-  color: tomato;
-  line-height: 40px;
+
+.logo {
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: .5s;
-  box-sizing: border-box;
+  margin-top: 250px;
 }
-ul li a span {
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  background-color: tomato;
-  z-index: -1;
-  transform-origin: top;
-  transform: scaleY(0);
-  transition: transform .5s;
+
+ a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: #ac3131;
+   } 
+
+
+.menu {
+  margin-top: 50px;
+  text-align: center;
 }
-ul li a:hover {
-  color: #fff;
-  text-decoration: none;
+
+ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+   }
+   ul.hr li {
+    text-align: center;
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 50px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+   }
+
+
+  li:hover{
+  border: 5px solid none;
+  background: #509199; 
+  padding: 5px;
+  margin:5px;
+  font-weight: 600; /* Жирное начертание */
 }
-ul li a:hover span {
-  transform-origin: bottom;
-  transform: scaleY(1);
-}
-ul li a span:nth-child(1) {
-  left: 0;
-  transition-delay: 0s;
-}
-ul li a span:nth-child(2) {
-  left: 25%;
-  transition-delay: 0.15s;
-}
-ul li a span:nth-child(3) {
-  left: 50%;
-  transition-delay: 0.3s;
-}
-ul li a span:nth-child(4) {
-  left: 75%;
-  transition-delay: 0.45s;
-}
+
